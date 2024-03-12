@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    margin: 1rem;
+}
+
+.players{
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.players div{
+    display: flex;
+    width: 15rem;
+    height: 2rem;
+    background-color: rgb(212, 212, 212);
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 1rem;
+    margin-right: 2rem;
+}
+
+#player1, #player2{
+    background-color: rgb(212, 212, 212);
+    border: none;
+    height: 2rem;
+}
+
+#player1:focus, #player2:focus{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.button-start {
+    align-self: center;
+    height: 2rem;
+    width: 7rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: rgb(0, 184, 125);
+    text-transform: uppercase;
+    font-weight: 800;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.button-start:hover{
+    background-color: rgb(0, 149, 102);
+}
+
+h2{
+    margin-left: 2rem;
+    align-self: flex-start;
+}
+
+section{
+    background-color: rgb(102, 102, 102);
+    display: grid;
+    grid-template-columns: 6rem 6rem 6rem;
+    grid-template-rows: 6rem 6rem 6rem;
+    gap: .5rem;
+    margin: 2rem;
+    max-width: 19rem;
+}
+
+section span{
+    background-color: rgb(219, 219, 219);
+    display: grid;
+    place-content: center;
+    font-size: 5rem;
+}
+
+#gameBoard span.win{
+    background-color: rgb(0, 184, 125);
+}
+
+.region{
+    cursor: pointer;
+}
